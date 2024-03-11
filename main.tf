@@ -101,7 +101,7 @@ resource "aws_ecs_service" "backend_svc" {
 
     network_configuration {
       security_groups = [ data.aws_security_group.backend_sg.id]
-      subnets = ["subnet-0950b64a65c69b91b", "subnet-08c90847386dfd5c5"]
+      subnets = ["subnet-087cc4c415f43a50f", "subnet-0a60c048a47aec5a4"]
       assign_public_ip = true
     }
 
