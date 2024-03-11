@@ -28,7 +28,7 @@ pipeline {
         stage('Push Image to ECR') {
             steps {
                 script {
-                    docker.withRegistry("https://"+registry, "ecr:us-east-1:"+registryCredential){
+                    docker.withRegistry("https://"+registry, "ecr:us-east-2:"+registryCredential){
                         dockerImage.push()
                     }
                 }
