@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        registry = '643099829845.dkr.ecr.us-east-1.amazonaws.com/node_backend'
+        registry = '643099829845.dkr.ecr.us-east-2.amazonaws.com/node-backend-repo'
         registryCredential = 'Jenkins-ecr'
         dockerImage = ''
     }
